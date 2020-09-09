@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace EFCore.Domains
 {
-    public class PedidoItem
-    {
-        [Key]
-        public Guid Id { get; set; }
-        
+    public class PedidoItem : BaseDomain
+    {        
         public Guid IdPedido { get; set; }
         [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }
@@ -24,9 +21,5 @@ namespace EFCore.Domains
         [Required]
         public int Quantidade { get; set; }
 
-        public PedidoItem()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }

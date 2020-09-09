@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
