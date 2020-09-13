@@ -13,7 +13,6 @@ namespace EFCore.Domains
         [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }
 
-
         public Guid IdProduto { get; set; }
         [ForeignKey("IdProduto")]
         public Produto Produto { get; set; }

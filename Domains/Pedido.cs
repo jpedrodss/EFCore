@@ -10,5 +10,7 @@ namespace EFCore.Domains
     {
         public string Status { get; set; }
         public DateTime OrderDate { get; set; }
+
+        public List<PedidoItem> PedidosItens { get; set; }
     }
 }
