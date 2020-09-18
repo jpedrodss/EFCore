@@ -1,6 +1,7 @@
 ﻿using EFCore.Context;
 using EFCore.Domains;
 using EFCore.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Senai.EfCore.Interfaces;
 using System;
 using System.Collections.Generic;
