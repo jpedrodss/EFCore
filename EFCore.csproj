@@ -25,9 +25,5 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
-
 
 </Project>

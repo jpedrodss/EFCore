@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using EFCore.Domains;
 using EFCore.Interfaces;
 using EFCore.Repositories;
+using EFCore.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -66,9 +67,13 @@ namespace EFCore.Controllers
                 if (produto == null)
                     return NotFound();
 
+                Moeda dolar = new Moeda();
+                
                 //Caso produto exista retorna 
                 //Ok e os dados do produto
-                return Ok(produto);
+                return Ok(new { 
+                    produto,
+                    valorDolar = dolar.GetDolarValue() * produto.Preco });
             }
             catch (Exception ex)
             {
